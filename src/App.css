@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+.dash {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+}
+.dash ul li {
+  list-style-type: none;
+  cursor: pointer;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.dash ul {
+  display: flex;
+  gap: 2rem;
+}
+.toggle {
+  display: flex;
+  height: 100%;
+  align-self: center;
+  padding: 0.4rem;
+  border-radius: 3rem;
+  border: 1px solid black;
+  max-width: 7rem;
+}
+.toggle img {
+  border-radius: 50%;
+  width: 40%;
+  height: 100%;
+}
+.ic {
+  border: 0.4px solid rgb(243, 215, 205);
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  height: 70%;
+}
+.Card {
+  border: 1.4px solid rgb(191, 188, 188);
+}
+.cardTop {
+  padding: 0.4rem;
+  border-bottom: 0.1px solid rgb(211, 209, 209);
+  height: 3rem;
+  position: relative;
+  align-items: center;
+}
+.option {
+  position: absolute;
+  right: 1rem;
+  font-size: small;
+}
+.CustList {
+  position: relative;
+  padding: 1.4rem;
+  height: 4.7rem;
+}
+.buttons {
+  position: absolute;
+  right: 4rem;
+}
+.butt {
+  display: flex;
+  font-size: small;
+  border: 1.7px solid rgb(220, 217, 217);
+  padding: 0.4rem;
+  border-radius: 0.7rem;
+  background-color: rgb(246, 248, 249);
+  align-items: center;
+}
+.search {
+  display: flex;
+  font-size: small;
+  border: 1.7px solid rgb(220, 217, 217);
+  padding: 0.4rem;
+  border-radius: 0.7rem;
+  background-color: rgb(246, 248, 249);
+  align-items: center;
+}
+.MainPage {
+  border: 1.7px solid rgb(203, 201, 201);
+  border-radius: 1rem;
+  /* background-color: rgb(243, 234, 243); */
+}
+.TabList {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+.NavButtons {
+  border-radius: 0.4rem;
+  border: 1.7px solid lightgrey;
+  padding: 0.4rem;
+  transition: background-color 0.3s ease;
+}
+.NavButtons:hover {
+  background-color: grey;
+}
+
+.navs ul li:hover {
+  border-bottom: 1.5px solid orangered;
+}
+
+.disp{
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .dash{
+    max-width: 640px;
+  }
+  .dashmid {
+    display: none;
+  }
+  .disp{
+    display: block;
+  }
+}

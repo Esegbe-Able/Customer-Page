@@ -44,6 +44,7 @@ body {
 }
 .Card {
   border: 1.4px solid rgb(191, 188, 188);
+  /* padding: 1rem; */
 }
 .cardTop {
   padding: 0.4rem;
@@ -106,19 +107,40 @@ body {
 .navs ul li:hover {
   border-bottom: 1.5px solid orangered;
 }
-
-.disp{
+.menu {
   display: none;
+}
+.Db{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 @media (max-width: 640px) {
-  .dash{
-    max-width: 640px;
-  }
-  .dashmid {
+  .navs {
     display: none;
   }
-  .disp{
+  .menu {
     display: block;
+  }
+  .Albut {
+    display: none;
+  }
+  .MainPage {
+    max-width: 480px;
+  }
+  .TabList {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+  }
+  table td {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  .Db{
+    max-width: 590px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

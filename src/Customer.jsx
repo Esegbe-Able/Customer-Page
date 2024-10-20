@@ -6,17 +6,38 @@ import { SlOptions } from "react-icons/sl";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { TiThMenu } from "react-icons/ti";
 
-function CustomerMobile(props) {
-  return (
-    <div className="grid gap-2">
-      <div className="flex bg-gray-300 gap-2">
-        <h2>{props.name}</h2>
-        <p>Age: {props.age}</p>
-        <p>Location: {props.location}</p>
-      </div>
-    </div>
-  );
+function MobileBut(){
+  return(
+    <>
+    <div className="buttons flex gap-4">
+          <button className="butt gap-1">
+            All time <RxCross2 />
+          </button>
+          <button className="butt gap-1">
+            Team plan <RxCross2 />
+          </button>
+          <button className="butt gap-1">
+            Active <RxCross2 />
+          </button>
+          <button className="butt gap-1">
+            <FiFilter />
+            More filters
+          </button>
+          <div className=" search flex items-center">
+            <RiSearchLine className=" mr- left items-center" />
+            <input
+              className=" ml-2 bg-slate-50 "
+              type="text"
+              placeholder="Seacrch"
+              onFocus={(e) => (e.target.style.border = "none")}
+            />
+            <span className="bg-slate-300 w-5 rounded text-center">K</span>
+          </div>
+        </div>
+    </>
+  )
 }
 
 function Customer() {
@@ -55,31 +76,10 @@ function Customer() {
     <div className="MainPage mx-4">
       <div className="CustList flex ">
         <span className=" font-medium text-2xl">Customer List</span>
-        <div className="buttons flex gap-4">
-          <button className="butt gap-1">
-            All time <RxCross2 />
-          </button>
-          <button className="butt gap-1">
-            Team plan <RxCross2 />
-          </button>
-          <button className="butt gap-1">
-            Active <RxCross2 />
-          </button>
-          <button className="butt gap-1">
-            <FiFilter />
-            More filters
-          </button>
-          <div className=" search flex items-center">
-            <RiSearchLine className=" mr- left items-center" />
-            <input
-              className=" ml-2 bg-slate-50 "
-              type="text"
-              placeholder="Seacrch"
-              onFocus={(e) => (e.target.style.border = "none")}
-            />
-            <span className="bg-slate-300 w-5 rounded text-center">K</span>
-          </div>
+        <div className="Albut">
+        <MobileBut />
         </div>
+        <TiThMenu style={{display: 'flex', display: 'none', alignSelf: 'center', position: 'absolute', right: '4'}}/>
       </div>
       <hr />
       <div className="TabList mt-6 grid text-sm">

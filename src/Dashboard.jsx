@@ -42,7 +42,7 @@ function DashCards({
         <SlOptions className="option" style={{ margin: "auto" }} />
         <br />
       </div>
-      <div className=" text-center items-center h-16 m-auto flex gap-3">
+      <div className=" text-center items-center p-3 h-16 m-auto flex gap-3">
         <span className="text-3xl">{Number}</span>
         <span className=" flex items-center text-xs p-1 rounded-md border-l-green-300" style={{color: rateCol, backgroundColor: bgCol}}>{ratNum>3? (<> {Rate}<FaArrowUpLong/> </>) : "true"} </span>
         <p className="text-sm text-gray-400">{comment}</p>
@@ -116,7 +116,7 @@ function Dashboard() {
       <button className="NavButtons flex items-center gap-2 bg-rose-500 text-white text-sm p-2" >Add Customer <MdAdd /></button>
       </div>
     </div>
-    <div className="Db grid grid-cols-4 gap-2 mx-4 " style={{width: '100%'}}>
+    <div className="Db gap-2 mx-4 pd " style={{width: '100%'}}>
       {cards.map((item) => (
         <DashCards
           key={item.id}

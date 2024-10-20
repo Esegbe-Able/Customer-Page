@@ -30,7 +30,7 @@ function DashCards({
   const ratNum = 3.4;
 
   return (
-    <div className="Card rounded-lg">
+    <div className="Card rounded-lg w-full">
       <div className="cardTop flex gap-2">
         <div
           className="ic"
@@ -116,7 +116,7 @@ function Dashboard() {
       <button className="NavButtons flex items-center gap-2 bg-rose-500 text-white text-sm p-2" >Add Customer <MdAdd /></button>
       </div>
     </div>
-    <div className="Db flex gap-2 mx-4 pd " >
+    <div className="Db flex gap-2 mx-4 pd  " >
       {cards.map((item) => (
         <DashCards
           key={item.id}
